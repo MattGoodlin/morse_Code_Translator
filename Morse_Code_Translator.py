@@ -43,11 +43,11 @@ translator = {
 ' ' : ' '
 }
 
-
+#Splitting the message into individual characters so it can be iterated through
 def split(word):
 	return [char for char in word]
-test = split('hello')
 
+#Matching each split character with it's respecive morse code and returning it as a concatenated string
 def translate(split_word):
 	message = ''
 	for character in split_word:
@@ -56,7 +56,7 @@ def translate(split_word):
 	return message
 
 
-
+#Putting it all together
 def main():
 	uncodedMessage = input('What would you like to translate?')
 	uncodedMessage = uncodedMessage.lower()
